@@ -1,1 +1,173 @@
+/* ---------- RESET ---------- */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ---------- FARBEN ---------- */
+
+:root{
+
+    --background:#18181B;
+
+    --card:#242429;
+
+    --purple:#9146FF;
+
+    --yellow:#F7C948;
+
+    --white:#FFFFFF;
+
+    --gray:#CCCCCC;
+
+}
+
+/* ---------- BODY ---------- */
+
+body{
+
+    background:var(--background);
+
+    color:white;
+
+    font-family:'Poppins',sans-serif;
+
+    overflow-x:hidden;
+
+}
+
+/* ---------- Hintergrund ---------- */
+
+.background{
+
+    position:fixed;
+
+    width:100%;
+
+    height:100%;
+
+    background:
+
+    radial-gradient(circle at top,
+    rgba(145,70,255,.35),
+    transparent 60%),
+
+    linear-gradient(#18181B,#111);
+
+    z-index:-1;
+
+}
+
+/* ---------- HERO ---------- */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    width:90%;
+
+    max-width:1400px;
+
+    margin:auto;
+
+}
+
+.hero-content{
+
+    width:50%;
+
+}
+
+.logo{
+
+    width:350px;
+
+    margin-bottom:40px;
+
+}
+
+.hero h2{
+
+    color:var(--yellow);
+
+    font-size:2rem;
+
+    margin-bottom:15px;
+
+}
+
+.hero h1{
+
+    font-family:'Luckiest Guy';
+
+    font-size:6rem;
+
+    color:white;
+
+    letter-spacing:3px;
+
+    margin-bottom:25px;
+
+}
+
+.hero p{
+
+    font-size:1.3rem;
+
+    line-height:1.8;
+
+    color:var(--gray);
+
+}
+
+.hero-image{
+
+    width:40%;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.hero-image img{
+
+    width:100%;
+
+    max-width:550px;
+
+    animation:float 4s ease-in-out infinite;
+
+}
+
+/* ---------- Animation ---------- */
+
+@keyframes float{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-20px);
+
+    }
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
+
+}
